@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "TimeStamp": true
+  },
   "properties": {
     "firstname": {
       "type": "string"
@@ -17,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "comments": {
+      "type": "hasMany",
+      "model": "comments",
+      "foreignKey": ""
+    },
+    "favorites": {
+      "type": "hasMany",
+      "model": "favorites",
+      "foreignKey": "customerId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",
