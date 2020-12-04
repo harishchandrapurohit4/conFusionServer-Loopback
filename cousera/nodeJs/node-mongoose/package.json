@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index"
   },
-  "author": "Harish purohit",
+  "author": "Harish Purohit",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.1.7"
+    "mongoose": "^5.11.0"
   }
 }
